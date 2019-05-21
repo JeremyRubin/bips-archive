@@ -148,7 +148,7 @@ possible to construct in script what data is committed to. By using a data
 lookahead, we ensure that the outputs are known at the time of spending.
 
 The script programmer is still able to conditionalize which hash it is checked
-on, e.g., <code>OP_IF OP_CHECKOUTPUTSHASHVERIFY <outputs 1> OP_ELSE <outputs 2>
+on, e.g., <code>OP_IF OP_CHECKOUTPUTSHASHVERIFY <outputs 1> OP_ELSE OP_CHECKOUTPUTSHASHVERIFY <outputs 2>
 OP_ENDIF</code>. However, by keeping the outputs literal hashes we limit the
 possibilities.
 
